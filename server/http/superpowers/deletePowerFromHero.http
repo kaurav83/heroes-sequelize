@@ -1,0 +1,1 @@
+DELETE http://localhost:5000/api/power/1/7 HTTP/1.1

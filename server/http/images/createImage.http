@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/image/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "url": "https://hips.hearstapps.com/hmg-prod/images/tobey-maguire-andrew-garfield-tom-holland-1607527815.jpg?crop=1.00xw:0.564xh;0,0.0922xh&resize=1200:*",
+}
