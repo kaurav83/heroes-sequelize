@@ -16,12 +16,13 @@ console.log(heroInstance, 'HERO')
 
 
 module.exports.createImage = async (req, res, next) => {
+    console.log('OTRABOTAL');
     try {
         const { params: {heroId}, body } = req;
 
-        // console.log(heroId, 'HERO')
+        console.log(heroId, 'HERO')
         const hero = await Superhero.findByPk(heroId);
-        const result = await hero.createImage({ url: body.url, superheroId: heroInstance.id });
+        const result = await hero.createImage({ url: body.url, superheroId: heroId });
         return res.status(201).send(result);
     } catch (err) {
         next(err);
