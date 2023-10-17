@@ -1,1 +1,1 @@
-GET http://localhost:5000/api/power/4/heroes HTTP/1.1
+GET http://localhost:5000/api/power/1/heroes HTTP/1.1

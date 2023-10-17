@@ -14,14 +14,13 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      superheroId: {
+      superhero_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: {
-            tableName: 'superheroes',
-            key: 'id'
-          }
+          model: 'superheroes',
+          key: 'id',
+          as: 'superhero_id',
         },
         onUpdate: 'cascade',
         onDelete: 'cascade'

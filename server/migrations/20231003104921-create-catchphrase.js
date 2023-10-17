@@ -14,7 +14,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      superheroId: {
+      superhero_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

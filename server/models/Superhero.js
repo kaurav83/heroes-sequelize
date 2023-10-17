@@ -40,7 +40,7 @@ module.exports = (sequelize) => {
     Superhero.associate = (models) => {
         Superhero.belongsToMany(models.Superpower, { through: 'superheroes_to_superpowers', foreignKey: 'superheroId' });
         Superhero.hasOne(models.CatchPhrase, { foreignKey: 'superheroId' });
-        Superhero.hasMany(models.Image, { foreignKey: 'superheroId' });
+        Superhero.hasMany(models.Image, { foreignKey: 'superheroId', as: 'images' });
     }
 
     return Superhero;

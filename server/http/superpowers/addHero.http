@@ -1,1 +1,1 @@
-PUT http://localhost:5000/api/power/2/5
+PUT http://localhost:5000/api/power/1/1
