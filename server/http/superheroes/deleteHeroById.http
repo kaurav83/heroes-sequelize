@@ -1,1 +1,1 @@
-DELETE http://localhost:5000/api/hero/3 HTTP/1.1
+DELETE http://localhost:5000/api/hero/42 HTTP/1.1

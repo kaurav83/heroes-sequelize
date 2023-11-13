@@ -1,7 +1,9 @@
-PUT http://localhost:5000/api/hero/4 HTTP/1.1
+PUT http://localhost:5000/api/hero/42 HTTP/1.1
 Content-Type: application/json
 
 {
-    "originDescription": "asdf updated33",
-    "nickname": "OTHER TEST"
+    "originDescription": "Edited description2",
+    "nickname": "Edited nickname3",
+    "images": ["https://images/image-asset.png", "https://static/protagonist"],
+    "superPowers": [{"id": 3}, {"id": 1}, {"id": 4}]
 }

@@ -2,5 +2,5 @@ POST http://localhost:5000/api/power HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Огненный шар"
+    "name": "Подводное дыхание"
 }
